@@ -1,0 +1,58 @@
+% egrep -v '^#' .ncmpcpp/config
+mpd_music_dir = "/mnt/Linux_Stuff/Music"
+visualizer_in_stereo = "yes"
+visualizer_fifo_path = "/tmp/mpd.fifo"
+visualizer_output_name = "Kali Pentesting"
+visualizer_sync_interval = "30"
+visualizer_type = "spectrum"
+visualizer_look = "◆▋"
+#visualizer_look = "+|"
+
+message_delay_time = "3"
+playlist_shorten_total_times = "yes"
+#playlist_display_mode = "columns"
+browser_display_mode = "columns"
+search_engine_display_mode = "columns"
+playlist_editor_display_mode = "columns"
+autocenter_mode = "yes"
+centered_cursor = "yes"
+user_interface = "alternative"
+follow_now_playing_lyrics = "yes"
+locked_screen_width_part = "60"
+display_bitrate = "yes"
+external_editor = "nano"
+use_console_editor = "yes"
+state_flags_color = "cyan"
+visualizer_color = "cyan"
+mpd_host = "127.0.0.1"
+mpd_port = "6601"
+mouse_list_scroll_whole_page = "yes"
+lines_scrolled = "1"
+#ask_before_clearing_main_playlist = "yes"
+enable_window_title = "yes"
+
+[playlist]
+playlist_display_mode = "classic"
+song_list_format = "$5%t $R$6%a"
+now_playing_prefix = "$b"
+now_playing_suffix = "$/b"
+browser_playlist_prefix = "$1»$1 "
+
+[statusbar]
+progressbar_look = "━━━"
+progressbar_color = "black"
+statusbar_visibility = "yes"
+progressbar_elapsed_color = "cyan"
+statusbar_color = "3"
+song_status_format = "{%t - %a}"
+
+[library]
+song_library_format = "{{%a - %t}|{%f}}{$R%l}"
+empty_tag_color = "black"
+
+[header]
+header_visibility = "no"
+header_window_color = "default"
+volume_color = "green"
+state_line_color = "black"
+
