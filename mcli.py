@@ -30,7 +30,7 @@ mpd_config = open('default_mpd.conf', 'r')
 mpd_content = mpd_config.read().splitlines()
 
 mpd_content[0] = '''music_directory "'''+music_dir+'''"'''
-mpd_content[1] = '''playlist_directory"'''+music_dir+'''"'''
+mpd_content[1] = '''playlist_directory "'''+music_dir+'''"'''
 mpd_content[12] = '''    name                    "'''+userName+'''"'''
 mpd_config.close()
 
