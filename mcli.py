@@ -20,7 +20,7 @@ ncmpcpp_content[1] = '''mpd_music_dir = "'''+music_dir+'''"'''
 ncmpcpp_content[4] = '''visualizer_output_name = "'''+userName+'''"'''
 ncmpcpp_config.close()
 
-ncmpcpp_final = open(createncmpcpp+'\config','x')
+ncmpcpp_final = open(str(createncmpcpp)+'/config','x')
 
 for i in ncmpcpp_content:
     ncmpcpp_final.write(i+"\n")
@@ -34,7 +34,7 @@ mpd_content[1] = '''playlist_directory"'''+music_dir+'''"'''
 mpd_content[12] = '''    name                    "'''+userName+'''"'''
 mpd_config.close()
 
-mpd_final = open(creatempd+'\mpd.conf', 'x')
+mpd_final = open(str(creatempd)+'/mpd.conf', 'x')
 
 for i in mpd_content:
     mpd_final.write(i+"\n")
